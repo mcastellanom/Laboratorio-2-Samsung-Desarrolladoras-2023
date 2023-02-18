@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Laboratorio 2 - Sign Up Form</title>
+  <!---Custom CSS File--->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="registration form">
+      <header>Create Account</header>
+      <form id="form" action="/">
+		<div class="input-action">
+			<h1>Nombre</h1>
+			<input type="text" id="username" placeholder="Introduzca su nombre">
+			<div class="error"></div>
+		</div>
+		<div class="input-action">	
+			<h1>Email</h1>
+			<input type="email" id="email" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="Introduzca su email">
+			<div class="error"></div>
+		</div>
+		<div class="input-action">
+			<h1>Clave</h1>
+			<input type="password" id="password" placeholder="Crea una clave">
+			<div class="error"></div>
+		</div>
+		<div class="input-action">
+			<h1>Confirme su clave</h1>
+			<input type="password" id="passwordcheck" placeholder="Confirme su clave">
+			<div class="error"></div>
+		</div>
+			<input type="submit" class="button" value="Enviar" onclick = "checkInputs()">
+      </form>
+      <div class="signup">
+        <span class="signup">Accede al código en GitHub pulsando 
+         <A href="https://github.com/mcastellanom/SamsungDesArrolladoras2023.git" target="_blank" for="check">Aquí</A>
+        </span>
+      </div>
+    </div>
+  </div>
+  <script src="index.js" type="text/javascript"></script> 
+</body>
+</html>
+
